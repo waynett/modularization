@@ -1,0 +1,21 @@
+Pod::Spec.new do |s|
+  s.name             = "repoName"
+  s.version          = "0.0.1"
+  s.summary          = "modularization repoName used on iOS."
+  s.description      = <<-DESC
+                       It is a modularization repoName used on iOS, which implement by Objective-C.
+                       DESC
+  s.homepage         = "http://git.oa.com/waynett/repoName"
+  s.license          = 'MIT'
+  s.author           = { "waynett" => "waynettwan@dengtacj.com" }
+  s.source           = { :git => "http://git.oa.com/waynett/repoName.git", :tag => s.version.to_s }
+
+  s.platform     = :ios, '7.0'
+  s.requires_arc = true
+
+  s.source_files = 'originRepoName/**/*.{h,m}'
+  s.public_header_files = 'originRepoName/**/*.h'
+
+  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
+
+end
